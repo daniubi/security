@@ -23,13 +23,13 @@ import org.springframework.transaction.annotation.Transactional;
  *
  */
 @Component
-@Transactional
-public class DemoUserDetailsService implements UserDetailsService, SocialUserDetailsService {
+	@Transactional
+	public class DemoUserDetailsService implements UserDetailsService, SocialUserDetailsService {
 
-	private Logger logger = LoggerFactory.getLogger(getClass());
-	
-	@Autowired
-	private PasswordEncoder passwordEncoder;
+		private Logger logger = LoggerFactory.getLogger(getClass());
+
+		@Autowired
+		private PasswordEncoder passwordEncoder;
 	
 
 	/*
