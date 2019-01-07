@@ -77,6 +77,10 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
 			.apply(smsCodeAuthenticationSecurityConfig)
 				.and()
 			.apply(imoocSocialSecurityConfig)
+//				.and()
+//				.authorizeRequests()        // 定义哪些URL需要被保护、哪些不需要被保护
+//				.antMatchers("/auth/qq").permitAll()
+//				.antMatchers("/auth/weixin").permitAll()
 				.and()
 			//记住我配置，如果想在'记住我'登录时记录日志，可以注册一个InteractiveAuthenticationSuccessEvent事件的监听器
 			.rememberMe()
