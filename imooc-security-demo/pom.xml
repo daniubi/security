@@ -59,6 +59,69 @@
 			<artifactId>jjwt</artifactId>
 			<version>0.7.0</version>
 		</dependency>
+
+
+
+
+
+
+
+
+
+		<!--_________________________________________________________________________________________-->
+		<!--有关Maven项目中JDK8.0以上缺少jaxb-api的异常报错解决-->
+		<!--https://blog.csdn.net/weixin_41310392/article/details/79883023-->
+		<!--<dependency>-->
+			<!--<groupId>javax.xml.bind</groupId>-->
+			<!--<artifactId>jaxb-api</artifactId>-->
+			<!--<version>2.3.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.sun.xml.bind</groupId>-->
+			<!--<artifactId>jaxb-core</artifactId>-->
+			<!--<version>2.3.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.sun.xml.bind</groupId>-->
+			<!--<artifactId>jaxb-impl</artifactId>-->
+			<!--<version>2.3.0</version>-->
+		<!--</dependency>-->
+		<!--&lt;!&ndash; https://mvnrepository.com/artifact/javax.activation/activation &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>javax.activation</groupId>-->
+			<!--<artifactId>activation</artifactId>-->
+			<!--<version>1.1.1</version>-->
+		<!--</dependency>-->
+		<!--_________________________________________________________________________________________-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</dependencies>
 
 	<build>
