@@ -6,6 +6,7 @@ package com.imooc.security.rbac.init;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.imooc.security.rbac.repository.*;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,10 +17,6 @@ import com.imooc.security.rbac.domain.Resource;
 import com.imooc.security.rbac.domain.ResourceType;
 import com.imooc.security.rbac.domain.Role;
 import com.imooc.security.rbac.domain.RoleAdmin;
-import com.imooc.security.rbac.repository.AdminRepository;
-import com.imooc.security.rbac.repository.ResourceRepository;
-import com.imooc.security.rbac.repository.RoleAdminRepository;
-import com.imooc.security.rbac.repository.RoleRepository;
 
 /**
  * 默认的系统数据初始化器，永远在其他数据初始化器之前执行
@@ -45,6 +42,7 @@ public class AdminDataInitializer extends AbstractDataInitializer {
 	@Autowired
 	protected ResourceRepository resourceRepository;
 
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -62,6 +60,7 @@ public class AdminDataInitializer extends AbstractDataInitializer {
 	 */
 	@Override
 	protected void doInit() {
+
 		initResource();
 		Role role = initRole();
 		initAdmin(role);
